@@ -17,11 +17,11 @@ fun division(first: Double, second: Double) : Double {
 }
 
 fun main() {
-    val plus = add(1, 1)
-    println("1 + 1 = $plus")
+    val plus = add(2, 5)
+    println("2 + 5 = $plus")
 
-    val minus = subtract(1, 1)
-    println("1 - 1 = $minus")
+    val minus = subtract(72, 18)
+    println("72 - 18 = $minus")
 
     val multiply = multiply(2, 5)
     println("2 * 5 = $multiply")
