@@ -9,6 +9,6 @@ internal class ComparisonKtTest: StringSpec ({
     }
 
     "max from 25, 28 and 32 is 32" {
-        maxOf3Num(25, 28, 32) shouldBe 32
+        maxOf3Num(25,28,32) shouldBe 32
     }
 })
