@@ -28,9 +28,6 @@ dependencies {
     dokkaHtmlPlugin "org.jetbrains.dokka: kotlin-as-java-plugin: 1.4.20"
 }
 
-tasks.named("dokkaHtml") {
-    outputDirectory.set(buildDir.resolve("dokka"))
-}
 
 compileKotlin {
     kotlinOptions.jvmTarget = "12"
