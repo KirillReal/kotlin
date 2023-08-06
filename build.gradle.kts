@@ -1,5 +1,11 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+}
+
+plugins {
+    checkstyle
 }
 
 group 'ru.job4j'
@@ -20,6 +26,10 @@ tasks.test {
 
 test {
     useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
 }
 
 compileKotlin {
