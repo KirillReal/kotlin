@@ -16,7 +16,7 @@ internal class TrackerTest : StringSpec({
         val item = Item("test")
         val add = tracker.add(item)
         val replaced = Item("New test")
-        tracker.replace(add.getId(), replaced)
+        tracker.replace(add.id, replaced)
         tracker.findAll() shouldBe arrayOf(Item(1, "New test"))
     }
 
@@ -24,8 +24,8 @@ internal class TrackerTest : StringSpec({
         val tracker = Tracker()
         val item = Item("test")
         val add = tracker.add(item)
-        tracker.delete(add.getId())
-        tracker.findById(add.getId()) shouldBe null
+        tracker.delete(add.id)
+        tracker.findById(add.id) shouldBe null
     }
 
     "Test method findByName" {
